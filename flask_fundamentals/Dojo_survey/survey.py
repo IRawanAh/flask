@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/result', methods=['POST'])
+@app.route('/result')
 def create_user():
     return render_template("result.html", info=request.form)
 
