@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="container">
+<h1>Dojo Survey</h1>
+<br/>
+<br/>
+<br/>
+    <form action='/result' method='post'>
+        <div class="form-group">
+            <label>Your name:</label> <input type='text' class="form-control" name='name'>
+
+             <label>Dojo location:</label>
+              <select class="form-control" name="location" >
+                <option value="Riyadh">Riyadh</option>
+                <option value="Jeddah">Jeddah</option>
+                <option value="NewYork">New York</option>
+                <option value="Dubai">Dubai</option>
+             </select>
+    <label>Favorite language: </label>
+         <select class="form-control" name="language" >
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+          </select>
+    <label>Comments(optional):</label>
+    <textarea name ="comment"class="form-control" ></textarea>
+    <input type='submit'class="btn btn-primary" value='Submit'>
+        </div>
+</form>
+</div>
