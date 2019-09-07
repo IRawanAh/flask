@@ -1,0 +1,18 @@
+<!-- based on the folder structure on the right -->
+<!-- linking a css style sheet -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./style.css') }}">
+
+
+
+
+   <table>        
+    {% for i in range(0,x): %}
+    <tr>
+    {% for j in range(0,y): %}
+       <td class="color{{ (i+j)%2 }}"> </td>
+    {% endfor %}
+</tr>
+    {% endfor %}
+</table>   
+    
+    

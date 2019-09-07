@@ -1,0 +1,21 @@
+td{
+      
+    height: 100px;
+    width: 100px;
+    margin: 2px;
+    display: inline-block;
+
+}
+
+.color1{
+    background-color: pink;
+    display: inline-block;
+}
+.color0{
+    background-color:grey;
+}
+
+body{
+    text-align: center;
+
+}
