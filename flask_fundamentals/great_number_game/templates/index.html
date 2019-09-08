@@ -1,0 +1,44 @@
+<style>
+body{
+    text-align: center;
+}
+.right {
+    background-color: green;
+}
+.wrong{
+    background-color: red;
+}
+div{
+    height: 400px;
+    width: 400px;
+    margin: auto auto;
+
+}
+.none{
+    display: none;
+}
+</style>
+<h1>Make a guess</h1>
+
+
+ <form action='/guess' method='post'>
+  <input type="text" name="answer">
+  <br/>
+<button type="submit">Submit</button>
+</form>
+<div class="{{right}}" >
+        <h1>{{text}}</h1>
+        <form class="{{right}}" action="/">
+        <button class="{{right}}"type="submit">Play Again</button>
+        </form>
+</div>
+
+<div class="{{wrong}}" >
+        <h1>{{text}}</h1>
+</div>
+
+
+<!--
+<form action='/destroy_session' method='post'>
+<button type="submit"> Reset</button>
+</form> -->
