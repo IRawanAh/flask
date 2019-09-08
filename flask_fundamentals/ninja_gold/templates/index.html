@@ -1,0 +1,56 @@
+<style>
+    form{
+        display: inline-block;
+    }
+    div {
+        display: inline-block;
+        height: 250px;
+        width: 250px;
+    }
+    body{
+        text-align: center !important;
+    }
+    .card1{
+        border:black 1px solid;
+        border-radius: 20px;
+        padding-top: 50px;
+    }
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="container">
+<h1>Your gold</h1>
+<h3>{{session["gold"]}}</h3>
+
+<form action="/process_money" value="farm" method="POST" >
+    <div class="card1" >
+<h1>Farm</h1> 
+<h6>earns 10-20 golds</h6>
+<button class="btn btn-info" value="farm" name="btnValue" type="submit">Find Gold!</button>       
+    </div>
+    
+    <div class="card1" >
+<h1>Cave</h1> 
+<h6>earns 5-10 golds</h6>
+<button class="btn btn-info" type="submit"name="btnValue"  value="cave">Find Gold!</button>       
+    </div>
+
+    <div class="card1" >
+<h1>House</h1> 
+<h6>earns 2-5 golds</h6>
+<button class="btn btn-info" type="submit" name="btnValue" value="house">Find Gold!</button>       
+    </div>
+
+    <div class="card1" >
+<h1>Casino</h1> 
+<h6>earns/take 0-50 golds</h6>
+<button class="btn btn-info" type="submit"name="btnValue"  value="casino">Find Gold!</button>       
+    </div>
+</form>
+<br/>
+<br/>
+  <textarea class="form-control" rows="5" id="comment">
+    {{session["activities"]}}
+  </textarea>
+      
+</div>
